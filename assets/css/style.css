@@ -3,22 +3,36 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1900px;
 }
-h2, h3, p {
+h2, h3, p, label, div {
     font-family: 'Maecenas Light', Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+}
+p {
+    font-size: 1.2em;
 }
 h3 {
     color: #1d5969;
     font-weight: 800;
 }
+.bold {
+    font-weight: 700;
+}
 .citation {
     font-style: italic;
 }
+.list-inline {
+    display: flex;
+    margin-top: 20px;
+}
+.list-inline > li {
+    margin-right: 20px;
+}
+.select {
+    color: #1d5969;
+}
 section {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     margin-top: 20px;
 }
 ul {
@@ -75,19 +89,36 @@ ul {
     margin: 0;
     padding: 12px 25px;
 }
+label {
+    color: #1d5969;
+    font-weight: 700;
+}
 
 /* SECTION fondation_description */
-#fondation_description {
-}
 
 /* SECTION fondation_characters */
 #fondation_characters .bloc-text > div {
     display: flex;
+    align-items: center;
 }
 #fondation_characters .bloc-text div.img-character {
+    width: 160px;
+    text-align: center;
+}
+#fondation_characters .bloc-text .character div.img-character {
     margin-right: 30px;
-    width: 200px;
 }
 #fondation_characters .bloc-text div.description-character h3 {
     margin-top: 10px;
+}
+
+#fondation_characters .bloc-text div.description-character ul {
+    margin-top: 30px;
+}
+#fondation_characters .bloc-text div.description-character ul > li {
+    text-align: center;
+}
+#fondation_characters .bloc-text div.description-character ul > li div {
+    padding-top: 10px;
+    font-weight: 700;
 }
