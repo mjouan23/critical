@@ -8,7 +8,7 @@ h2, h3, p, label, div {
     font-family: 'Maecenas Light', Arial, Helvetica, sans-serif;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 h3 {
     color: #1d5969;
@@ -121,4 +121,28 @@ label {
 #fondation_characters .bloc-text div.description-character ul > li div {
     padding-top: 10px;
     font-weight: 700;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    section {
+        width: 100%;
+        margin: 15px;
+    }
+    #fondation_characters .bloc-text > div {
+        flex-direction: column;
+    }
+    #fondation_characters .bloc-text div.description-character {
+        text-align: center;
+    }
+    .list-inline > li:last-child {
+        margin-right: 0;
+    }
+    #fondation_characters .bloc-text div.description-character ul {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
