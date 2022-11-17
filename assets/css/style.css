@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('../img/background.jpg');
     background-attachment: fixed;
@@ -125,9 +129,11 @@ label {
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        padding: 15px;
+    }
     section {
         width: 100%;
-        margin: 15px;
     }
     #fondation_characters .bloc-text > div {
         flex-direction: column;
